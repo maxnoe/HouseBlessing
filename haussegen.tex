@@ -32,11 +32,9 @@
 \newfontfamily{\serif}{EB Garamond}
 
 \usepackage{lettrine}
-% \renewcommand{LettrineTextFont}{}
+\renewcommand{\LettrineTextFont}{\normalfont}
 
 \usepackage{xparse}
-
-% \NewDocumentCommand{\initial}{m m o o}<++>
 
 \newcommand{\initial}[3][initialcolor]{%
   \lettrine[
