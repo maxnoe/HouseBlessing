@@ -14,8 +14,10 @@
 
 % Define Colors:
 \usepackage{xcolor}
-\colorlet{initialcolor}{red!70!black}
-\colorlet{titlecolor}{red!70!black}
+\colorlet{darkred}{red!70!black}
+\colorlet{initialcolor}{darkred}
+\colorlet{titlecolor}{darkred}
+\colorlet{ghlcolor}{darkred}
 
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Chorus}
@@ -44,7 +46,7 @@
 
 \newcommand{\glaubenhoffenlieben}{%
   \centerline{Dieser Brief ist geschrieben aus}
-  \centerline{\serif \textbf{\textsc{Glauben Hoffen Lieben}}}%
+  \centerline{\serif\bfseries\scshape\color{ghlcolor}Glauben Hoffen Lieben}%
 }
 
 \begin{document}
