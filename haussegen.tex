@@ -1,30 +1,39 @@
 \documentclass[
-  paper=a3
-  fontsize=16pt,
+  paper=a3,
+  fontsize=20pt,
   parskip=half,
+  twocolumn,
+  DIV=16,
 ]{scrartcl}
 
-\usepackage[top=2cm, bottom=2cm]{geometry}
 
 \usepackage{fixltx2e}
 
 \usepackage{polyglossia}
 \setmainlanguage{german}
 
+% Define Colors:
 \usepackage{xcolor}
+\colorlet{initialcolor}{red!70!black}
+\colorlet{titlecolor}{red!70!black}
 
 \usepackage{fontspec}
 \setmainfont{Tex Gyre Chorus}
 \addtokomafont{disposition}{\rmfamily}
 
 \usepackage{yfonts}
+\usepackage{microtype}
 
-\newfontfamily{\initials}{EB Garamond Initials}
+\setlength{\columnsep}{70pt}
+
+% \newfontfamily{\initials}{EB Garamond Initials}
+\newfontfamily{\initials}{Tex Gyre Chorus}
 \newfontfamily{\calligraphic}{Tex Gyre Chorus}
 \newfontfamily{\serif}{EB Garamond}
 
 \usepackage{lettrine}
-\newfontfamily{\initials}{Tex Gyre Chorus}
+% \renewcommand{LettrineTextFont}{}
+
 \newcommand{\initial}[3][initialcolor]{%
   % \vspace{-2em}
   \lettrine[
@@ -36,9 +45,7 @@
   ]{\color{#1}\initials#2}{#3}
 }
 
-% Define Colors:
-\colorlet{initialcolor}{red!70!black}
-\colorlet{titlecolor}{red!70!black}
+
 
 \usepackage{anyfontsize}
 \usepackage{calc}
@@ -47,21 +54,21 @@
 
 \pagestyle{empty}
 
-\newcommand{\glaubenhoffenlieben}{
-  \vspace{0.5em}
-  \centerline{\Large Dieser Brief ist geschrieben aus} \medskip
-  \centerline{\Large \serif \textbf{\textsc{Glauben Hoffen Lieben}}}%
+\newcommand{\glaubenhoffenlieben}{%
+  \centerline{Dieser Brief ist geschrieben aus}
+  \centerline{\serif \textbf{\textsc{Glauben Hoffen Lieben}}}%
 }
 
 \begin{document}
-\begin{center}
-  \textswab{\fontsize{72}{96}\selectfont\color{titlecolor} Schutzbrief} \\[\baselineskip]
-\end{center}
+\twocolumn[%
+  \centering\textswab{\fontsize{100}{110}\selectfont\color{titlecolor} Schutzbrief}
+  \Large
+  \glaubenhoffenlieben
+  \vspace{1cm}
+]
 
-\glaubenhoffenlieben
+\flushbottom
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{W}{er} ihn in seinem Hause hält, \\
 dem schlögt kein Hagel ins Weizenfeld, \\
 seine Kirschen sind sicher vor Spatzen, \\
@@ -71,35 +78,21 @@ kein Fieber die Kinder Plagen, \\
 das Feuer muss von ihm weichen, \\
 der bittere Hunger desgleichen, \\
 das Reissen in Schulter und Knie \\
-und die dunke Melancholie.
-\end{minipage}
-
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{E}{s} dürfen Ratten und Maden, \\
 seinem Rauchfleisch und Mehl nich schaden, \\
 Pest, Diebe und Polizei gehen an ihm vorbei, \\
 hat nie im Schuh einen Stein \\
 und in Blase und Nier obendrein.
-\end{minipage}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{D}{enselben} wird Gott bekräften \\
-in allen seinen Geschäften.
-\end{minipage}
+in allen seinen Geschäften. \\
 
 \glaubenhoffenlieben
+\vspace{-0.5em}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{W}{as} steht darin? \\
 Das ich Gottes Befohlener bin.
-\end{minipage}
 
-
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{G}{ottes} güldener Thron \\
 ist mein Bastei und Bastion.
 
@@ -109,46 +102,35 @@ dass mich niemand kann fällen \\
 mit Granaten oder Schrapnellen, \\
 so bleib ich von Stahl und von Blei, \\
 von Gift und Handschellen frei.
-\end{minipage}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{D}{er} Tod geht mir hart an die Haut, \\
 aber dann ist der Weg ihm verbaut. \\
 Das Feuer mag mich umlohn, \\
 die bittere Flut mich bedrohn, \\
 sie steigt mir doch nur bis ans Kinn, \\
 weil ich Gottes Befohlener bin. \\
-\end{minipage}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{J}{edes} Elend soll mich anfassen, \\
 ich bleibe ihm nicht überlassen, \\
 soll leiden alle Beschwerden \\
 und von keiner ertötet werden. \\
-Manche Nacht  soll ich wachen und bangen \\
+Manche Nacht  soll ich wachen u.\ bangen \\
 und doch den morgen erlangen. \\
 Ud was meine Feinde auch hecken  \\
 in ihren Kanzlein und Verstecken, \\
 kein Haar auf meinem Haupt \\
 ist ihnen zu krümmen erlaubt.
-\end{minipage}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{I}{ch} lebe und solcher Gestalt \\
 hat die Welt an mir keine Gewalt, \\
 mus alles sich schicken und fügen \\
 zu Gottes und meinem Vergnügen \\
-\end{minipage}
 
 \glaubenhoffenlieben
+\vspace{-0.5em}
 
-\centering
-\begin{minipage}{\poemwitdh}
 \initial{E}{s} ist nichts weiter zu schreiben. \\
 Ich soll Gottes Befohlener bleiben.
-\end{minipage}
+
 
 \end{document}
