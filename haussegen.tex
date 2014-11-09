@@ -48,7 +48,25 @@
   ]{\color{#1}\initials#2}{#3}
 }
 
+\newcommand{\initialI}[2][initialcolor]{%
+  \lettrine[
+    lhang=0.5,
+    lines=2,
+    findent=-2pt,
+    lraise=0.6,
+    depth=-1
+  ]{\color{#1}\initials I}{#2}
+}
 
+\newcommand{\initialEs}[1][initialcolor]{%
+  \lettrine[
+    lhang=0.5,
+    lines=2,
+    findent=-0.4em,
+    lraise=0.6,
+    depth=-1
+  ]{\color{#1}\initials E}{\color{#1}s}\hspace{0.1em}
+}
 
 \usepackage{anyfontsize}
 \usepackage{calc}
@@ -82,7 +100,7 @@ das Feuer muss von ihm weichen, \\
 der bittere Hunger desgleichen, \\
 das Reissen in Schulter und Knie
 
-\initial{E}{s} dürfen Ratten und Maden, \\
+\initialEs dürfen Ratten und Maden, \\
 seinem Rauchfleisch und Mehl nich schaden, \\
 Pest, Diebe und Polizei gehen an ihm vorbei, \\
 hat nie im Schuh einen Stein \\
@@ -125,7 +143,7 @@ in ihren Kanzlein und Verstecken, \\
 kein Haar auf meinem Haupt \\
 ist ihnen zu krümmen erlaubt.
 
-\initial{I}{ch} lebe und solcher Gestalt \\
+\initialI{ch} lebe und solcher Gestalt \\
 hat die Welt an mir keine Gewalt, \\
 muss alles sich schicken und fügen \\
 zu Gottes und meinem Vergnügen
@@ -133,6 +151,6 @@ zu Gottes und meinem Vergnügen
 \vspace{1em}
 \glaubenhoffenlieben
 
-\initial{E}{s} ist nichts weiter zu schreiben. \\
+\initialEs ist nichts weiter zu schreiben. \\
 Ich soll Gottes Befohlener bleiben.%
 \end{document}
