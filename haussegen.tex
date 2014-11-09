@@ -48,6 +48,16 @@
   ]{\color{#1}\initials#2}{#3}
 }
 
+\newcommand{\initialW}[2][initialcolor]{%
+  \lettrine[
+    lhang=0.5,
+    lines=2,
+    findent=-3pt,
+    lraise=0.6,
+    depth=-1
+  ]{\color{#1}\initials W}{#2}
+}
+
 \newcommand{\initialI}[2][initialcolor]{%
   \lettrine[
     lhang=0.5,
@@ -58,7 +68,19 @@
   ]{\color{#1}\initials I}{#2}
 }
 
+\newcommand{\initialG}[2][initialcolor]{%
+  \lettrine[
+    lhang=0.5,
+    lines=2,
+    findent=-1pt,
+    lraise=0.7,
+    depth=-1
+  ]{\color{#1}\initials G}{#2}
+}
+
+
 \newcommand{\initialEs}[1][initialcolor]{%
+  \vspace{-0.2em}
   \lettrine[
     lhang=0.5,
     lines=2,
@@ -90,7 +112,7 @@
 
 \flushbottom
 
-\initial{W}{er} ihn in seinem Hause hält, \\
+\initialW{er} ihn in seinem Hause hält, \\
 dem schlögt kein Hagel ins Weizenfeld, \\
 seine Kirschen sind sicher vor Spatzen, \\
 kein Wasserrohr darf ihm platzen, \\
@@ -112,10 +134,10 @@ in allen seinen Geschäften.
 \vspace{1em}
 \glaubenhoffenlieben
 
-\initial{W}{as} steht darin? \\
+\initialW{as} steht darin? \\
 Das ich Gottes Befohlener bin.
 
-\initial{G}{ottes} güldener Thron \\
+\initialG{ottes} güldener Thron \\
 ist mein Bastei und Bastion. \\
 
 \initial{J}{esu} Christ heilges Fleisch und Blut \\
