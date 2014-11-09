@@ -1,0 +1,154 @@
+\documentclass[
+  paper=a3
+  fontsize=16pt,
+  parskip=half,
+]{scrartcl}
+
+\usepackage[top=2cm, bottom=2cm]{geometry}
+
+\usepackage{fixltx2e}
+
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage{xcolor}
+
+\usepackage{fontspec}
+\setmainfont{Tex Gyre Chorus}
+\addtokomafont{disposition}{\rmfamily}
+
+\usepackage{yfonts}
+
+\newfontfamily{\initials}{EB Garamond Initials}
+\newfontfamily{\calligraphic}{Tex Gyre Chorus}
+\newfontfamily{\serif}{EB Garamond}
+
+\usepackage{lettrine}
+\newfontfamily{\initials}{Tex Gyre Chorus}
+\newcommand{\initial}[3][initialcolor]{%
+  % \vspace{-2em}
+  \lettrine[
+    lhang=0.5,
+    lines=2,
+    findent=1pt,
+    lraise=0.6,
+    depth=-1
+  ]{\color{#1}\initials#2}{#3}
+}
+
+% Define Colors:
+\colorlet{initialcolor}{red!70!black}
+\colorlet{titlecolor}{red!70!black}
+
+\usepackage{anyfontsize}
+\usepackage{calc}
+
+\newcommand{\poemwitdh}{\widthof{seinem Rauchfleisch und Mehl nicht schaden}}
+
+\pagestyle{empty}
+
+\newcommand{\glaubenhoffenlieben}{
+  \vspace{0.5em}
+  \centerline{\Large Dieser Brief ist geschrieben aus} \medskip
+  \centerline{\Large \serif \textbf{\textsc{Glauben Hoffen Lieben}}}%
+}
+
+\begin{document}
+\begin{center}
+  \textswab{\fontsize{72}{96}\selectfont\color{titlecolor} Schutzbrief} \\[\baselineskip]
+\end{center}
+
+\glaubenhoffenlieben
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{W}{er} ihn in seinem Hause hält, \\
+dem schlögt kein Hagel ins Weizenfeld, \\
+seine Kirschen sind sicher vor Spatzen, \\
+kein Wasserrohr darf ihm platzen, \\
+kein böses Maul ihn verklagen, \\
+kein Fieber die Kinder Plagen, \\
+das Feuer muss von ihm weichen, \\
+der bittere Hunger desgleichen, \\
+das Reissen in Schulter und Knie \\
+und die dunke Melancholie.
+\end{minipage}
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{E}{s} dürfen Ratten und Maden, \\
+seinem Rauchfleisch und Mehl nich schaden, \\
+Pest, Diebe und Polizei gehen an ihm vorbei, \\
+hat nie im Schuh einen Stein \\
+und in Blase und Nier obendrein.
+\end{minipage}
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{D}{enselben} wird Gott bekräften \\
+in allen seinen Geschäften.
+\end{minipage}
+
+\glaubenhoffenlieben
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{W}{as} steht darin? \\
+Das ich Gottes Befohlener bin.
+\end{minipage}
+
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{G}{ottes} güldener Thron \\
+ist mein Bastei und Bastion.
+
+\initial{J}{esu} Christ heilges Fleisch und Blut \\
+ist mein Küraß und Eisenhut, \\
+dass mich niemand kann fällen \\
+mit Granaten oder Schrapnellen, \\
+so bleib ich von Stahl und von Blei, \\
+von Gift und Handschellen frei.
+\end{minipage}
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{D}{er} Tod geht mir hart an die Haut, \\
+aber dann ist der Weg ihm verbaut. \\
+Das Feuer mag mich umlohn, \\
+die bittere Flut mich bedrohn, \\
+sie steigt mir doch nur bis ans Kinn, \\
+weil ich Gottes Befohlener bin. \\
+\end{minipage}
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{J}{edes} Elend soll mich anfassen, \\
+ich bleibe ihm nicht überlassen, \\
+soll leiden alle Beschwerden \\
+und von keiner ertötet werden. \\
+Manche Nacht  soll ich wachen und bangen \\
+und doch den morgen erlangen. \\
+Ud was meine Feinde auch hecken  \\
+in ihren Kanzlein und Verstecken, \\
+kein Haar auf meinem Haupt \\
+ist ihnen zu krümmen erlaubt.
+\end{minipage}
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{I}{ch} lebe und solcher Gestalt \\
+hat die Welt an mir keine Gewalt, \\
+mus alles sich schicken und fügen \\
+zu Gottes und meinem Vergnügen \\
+\end{minipage}
+
+\glaubenhoffenlieben
+
+\centering
+\begin{minipage}{\poemwitdh}
+\initial{E}{s} ist nichts weiter zu schreiben. \\
+Ich soll Gottes Befohlener bleiben.
+\end{minipage}
+
+\end{document}
