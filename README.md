@@ -2,6 +2,9 @@
 
 ## I will try to make a Modern A3 Version of our beautiful house blessing.
 
-Picture of the Blessing:
+# Current PDF:
+![PDF](https://github.com/MaxNoe/HouseBlessing/blob/gh-pages/haussegen.pdf?raw=true)
+
+# Picture of the Blessing:
 
 ![Image](Schutzbrief.jpg)
